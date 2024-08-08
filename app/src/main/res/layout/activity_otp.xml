@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpActivity">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="186dp"
+        tools:layout_editor_absoluteY="174dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="center_horizontal">
+
+            <TextView android:text = "Verify OTP" android:layout_width="wrap_content"
+                android:layout_height = "wrap_content"
+                android:id = "@+id/textview"
+                android:textSize = "35dp"
+                android:layout_alignParentTop = "true"
+                android:layout_centerHorizontal = "true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/txtOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text|number"
+                tools:layout_editor_absoluteX="100dp"
+                tools:layout_editor_absoluteY="284dp"
+                android:hint="Enter OTP here"/>
+            <Button
+                android:id="@+id/validateOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verify OTP"
+                tools:layout_editor_absoluteX="168dp"
+                tools:layout_editor_absoluteY="375dp"
+                android:onClick="validateOtp"/>
+
+
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
